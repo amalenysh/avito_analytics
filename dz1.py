@@ -14,5 +14,35 @@ def step1():
     return step2_no_umbrella()
 
 
+# if __name__ == '__main__':
+#     step1()
+
+
+def step2_umbrella():
+    print(
+        'Утка-маляр 🦆 устала таскать этот дурацкий зонтик  '
+        'Оставить ли ей его у друга? ️'
+    )
+    option2 = ''
+    options2 = {'да': True, 'нет': False}
+    while option2 not in options2:
+        print('Выберите: {}/{}'.format(*options2))
+        option2 = input()
+        # break
+
+
+def step2_no_umbrella():
+    print(
+        'Утка-маляр 🦆 все-таки попала под дождь, но рядом есть магазин с плащами  '
+        'Купить ли ей плащ? ️'
+    )
+    option3 = ''
+    options3 = {'да': True, 'нет': False}
+    while option3 not in options3:
+        print('Выберите: {}/{}'.format(*options3))
+        option3 = input()
+        # break
+
+
 if __name__ == '__main__':
     step1()
