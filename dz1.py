@@ -14,10 +14,6 @@ def step1():
     return step2_no_umbrella()
 
 
-# if __name__ == '__main__':
-#     step1()
-
-
 def step2_umbrella():
     print(
         'Утка-маляр 🦆 устала таскать этот дурацкий зонтик  '
@@ -28,7 +24,6 @@ def step2_umbrella():
     while option2 not in options2:
         print('Выберите: {}/{}'.format(*options2))
         option2 = input()
-        # break
 
 
 def step2_no_umbrella():
@@ -41,7 +36,6 @@ def step2_no_umbrella():
     while option3 not in options3:
         print('Выберите: {}/{}'.format(*options3))
         option3 = input()
-        # break
 
 
 if __name__ == '__main__':
